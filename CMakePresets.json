@@ -1,0 +1,6 @@
+{
+  "version": 6,
+  "configurePresets": [{"name": "windows", "generator": "Ninja Multi-Config", "binaryDir": "${sourceDir}/build", "cacheVariables": {"CMAKE_CONFIGURATION_TYPES": "Debug;Release"}}],
+  "buildPresets": [{"name": "release", "configurePreset": "windows", "configuration": "Release"}, {"name": "debug", "configurePreset": "windows", "configuration": "Debug"}],
+  "testPresets": [{"name": "release", "configurePreset": "windows", "configuration": "Release", "output": {"outputOnFailure": true}}]
+}
